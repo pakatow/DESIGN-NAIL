@@ -10,15 +10,15 @@ const PainsSection = ({ data }: { data: DoresData }) => {
           <h2 className="text-3xl md:text-4xl font-headline text-foreground">{data.headline}</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {data.problemas.map((problema, index) => (
             <Card 
               key={index} 
-              className="bg-card border shadow-sm"
+              className="bg-card border-transparent shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300"
             >
               <CardContent className="p-6 flex items-start gap-4 text-left">
-                <XCircle className="w-6 h-6 text-destructive shrink-0 mt-1" />
-                <p className="text-base font-medium text-card-foreground">{problema}</p>
+                <XCircle className="w-8 h-8 text-destructive/80 shrink-0 mt-1" />
+                <p className="text-base font-medium text-muted-foreground">{problema}</p>
               </CardContent>
             </Card>
           ))}
