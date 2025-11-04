@@ -13,7 +13,7 @@ const PricingSection = ({ pacotes }: { pacotes: Pacote[] }) => {
     <section id="pricing" className="bg-secondary">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline text-foreground">Escolha o plano ideal para você</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-foreground font-bold">Escolha o plano ideal para você</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Invista na sua carreira com o pacote que melhor se adapta às suas necessidades.
           </p>

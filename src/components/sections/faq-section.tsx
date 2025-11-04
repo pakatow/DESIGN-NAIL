@@ -6,7 +6,7 @@ const FaqSection = ({ faqs }: { faqs: FAQ[] }) => {
     <section className="bg-secondary">
       <div className="container max-w-3xl mx-auto">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline text-foreground">Perguntas Frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-foreground font-bold">Perguntas Frequentes</h2>
           <p className="text-lg text-muted-foreground">
             Ainda tem dúvidas? Encontre as respostas aqui.
           </p>
