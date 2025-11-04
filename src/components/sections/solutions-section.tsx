@@ -24,7 +24,7 @@ const SolutionsSection = () => {
         <section className="bg-secondary">
             <div className="container text-center">
                 <div className="mb-12 space-y-4">
-                    <h2 className="text-2xl md:text-3xl font-headline text-foreground font-bold">
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                         A transformação para sua independência financeira começa aqui
                     </h2>
                 </div>
