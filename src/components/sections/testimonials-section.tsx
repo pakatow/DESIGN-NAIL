@@ -30,7 +30,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
     <section className="bg-secondary">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja o que nossas alunas estão dizendo sobre o curso.
           </p>
@@ -40,7 +40,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
           setApi={setApi}
           plugins={[
             Autoplay({
-              delay: 3000,
+              delay: 5000,
               stopOnInteraction: true,
             }),
           ]}
@@ -56,7 +56,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
               return (
                 <CarouselItem key={depoimento.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
-                    <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent">
+                    <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent group">
                       {image && (
                          <div className="relative aspect-[4/3] w-full">
                             <Image
