@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
-import BenefitsSection from "@/components/sections/benefits-section";
+import SolutionsSection from "@/components/sections/solutions-section";
 import PainsSection from "@/components/sections/pains-section";
 import ModulesSection from "@/components/sections/modules-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
@@ -8,7 +8,6 @@ import FaqSection from "@/components/sections/faq-section";
 import PricingSection from "@/components/sections/pricing-section";
 import {
   heroData,
-  beneficios,
   dores,
   modulos,
   depoimentos,
@@ -26,7 +25,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection data={heroData} />
         <PainsSection data={dores} />
-        <BenefitsSection benefits={beneficios} />
+        <SolutionsSection />
         <ModulesSection modules={modulos} />
         <PricingSection pacotes={pacotes} />
         <TestimonialsSection depoimentos={depoimentos} />
