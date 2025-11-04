@@ -18,7 +18,10 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
             <div className="text-center md:text-left space-y-6">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline tracking-tight text-foreground">
+                <p className="text-lg text-muted-foreground">
+                    {data.sub_headline}
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline tracking-tight text-foreground font-bold">
                     {data.headline}
                 </h1>
                 
@@ -44,9 +47,6 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                         </Button>
                      </a>
                 </div>
-                 <p className="text-lg text-muted-foreground">
-                    {data.sub_headline}
-                </p>
             </div>
              <div className="hidden md:flex justify-center items-center">
                 {instructorImage && (
