@@ -21,9 +21,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline tracking-tight text-foreground">
                     {data.headline}
                 </h1>
-                <p className="text-lg text-muted-foreground">
-                    {data.sub_headline}
-                </p>
+                
                 <div className="flex justify-center md:hidden">
                     {instructorImage && (
                         <div className="relative w-full max-w-sm aspect-[4/5]">
@@ -46,6 +44,9 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                         </Button>
                      </a>
                 </div>
+                 <p className="text-lg text-muted-foreground">
+                    {data.sub_headline}
+                </p>
             </div>
              <div className="hidden md:flex justify-center items-center">
                 {instructorImage && (
