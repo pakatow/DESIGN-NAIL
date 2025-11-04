@@ -14,10 +14,10 @@ const BenefitsSection = ({ benefits }: { benefits: string[] }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="bg-card hover:shadow-primary/10 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
-              <CardContent className="p-6 flex items-start gap-4">
-                <CheckCircle2 className="w-8 h-8 text-primary mt-1 shrink-0" />
-                <p className="text-base text-card-foreground">{benefit}</p>
+            <Card key={index} className="bg-background/50 border-2 border-transparent hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg">
+              <CardContent className="p-6 flex items-center gap-4 text-center">
+                <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
+                <p className="text-sm font-medium text-card-foreground">{benefit}</p>
               </CardContent>
             </Card>
           ))}
