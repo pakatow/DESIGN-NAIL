@@ -27,7 +27,6 @@ export type FAQ = {
 
 export type RodapeData = {
   copyright: string;
-  aviso_legal: string;
   url_termos: string;
   url_privacidade: string;
 };
@@ -59,22 +58,28 @@ export const modulos: Modulo[] = [
 
 export const depoimentos: Depoimento[] = [
   {
-    id: "whatsapp_1",
-    texto: "Me interessei em ser uma manicure, e comprei o guia! Foi a melhor decisão que tomei. O curso é super completo e a didática da instrutora é incrível. Já estou atendendo minhas primeiras clientes!",
-    imageId: "whatsapp_1",
-    nome: "Juliana S.",
+    id: "depoimento_img_1",
+    texto: "",
+    imageId: "depoimento_img_1",
+    nome: "Aluna 1",
   },
   {
-    id: "whatsapp_2",
-    texto: "Eu já era manicure, mas sentia que precisava me atualizar. O curso da NailDesign Pro me abriu os olhos para novas técnicas e tendências. Recomendo de olhos fechados!",
-    imageId: "whatsapp_2",
-    nome: "Carla M.",
+    id: "depoimento_img_2",
+    texto: "",
+    imageId: "depoimento_img_2",
+    nome: "Aluna 2",
   },
   {
-    id: "whatsapp_3",
-    texto: "Estava com medo de investir, mas a garantia de 7 dias me deu segurança. Nem precisei usar, o conteúdo é maravilhoso e vale cada centavo. Muito obrigada!",
-    imageId: "whatsapp_3",
-    nome: "Fernanda P.",
+    id: "depoimento_img_3",
+    texto: "",
+    imageId: "depoimento_img_3",
+    nome: "Aluna 3",
+  },
+  {
+    id: "depoimento_img_4",
+    texto: "",
+    imageId: "depoimento_img_4",
+    nome: "Aluna 4",
   },
 ];
 
@@ -103,7 +108,6 @@ export const faq: FAQ[] = [
 
 export const rodapeData: RodapeData = {
   copyright: "Copyright 2025/2026 – NAIL DESIGN. Todos os direitos reservados.",
-  aviso_legal: "PIRATARIA É CRIME. A venda deste curso só pode ser realizada através deste site oficial. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra a lei.",
   url_termos: "#",
   url_privacidade: "#",
 };

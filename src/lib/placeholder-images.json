@@ -37,22 +37,28 @@
       "imageHint": "nail art"
     },
     {
-      "id": "whatsapp_1",
-      "description": "Avatar for the first testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMGF2YXRhcnxlbnwwfHx8fDE3NjIyMTg5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman avatar"
+      "id": "depoimento_img_1",
+      "description": "Social proof image of a student's work",
+      "imageUrl": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjBwcm9vZnx8ZW58MHx8fHwxNzYyMjI3NjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social proof"
     },
     {
-      "id": "whatsapp_2",
-      "description": "Avatar for the second testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyMTkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman smiling"
+      "id": "depoimento_img_2",
+      "description": "Social proof image of a student's work",
+      "imageUrl": "https://images.unsplash.com/photo-1627042634317-6f8e7a083e44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuYWlsJTIwcG9saXNoJTIwYXBwbGljYXRpb258ZW58MHx8fHwxNzYyMjI3Njc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail application"
     },
     {
-      "id": "whatsapp_3",
-      "description": "Avatar for the third testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1569913486515-b74bf7751574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwYXZhdGFyfGVufDB8fHx8fDE3NjIyMDExMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person avatar"
+      "id": "depoimento_img_3",
+      "description": "Social proof image of a student's work",
+      "imageUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuYWlsJTIwYXJ0fGVufDB8fHx8fDE3NjIyMDQ2NzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail art"
+    },
+    {
+      "id": "depoimento_img_4",
+      "description": "Social proof image of a student's work",
+      "imageUrl": "https://images.unsplash.com/photo-1522338140262-f4602f136310?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuYWlsJTIwcG9saXNofGVufDB8fHx8fDE3NjIyMjc2MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail polish"
     }
   ]
 }
