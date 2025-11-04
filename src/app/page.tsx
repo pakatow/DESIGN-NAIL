@@ -1,4 +1,3 @@
-import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
 import BenefitsSection from "@/components/sections/benefits-section";
@@ -20,7 +19,6 @@ import { ShoppingCart } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <Header />
       <main className="flex-grow">
         <HeroSection data={heroData} />
         <BenefitsSection benefits={beneficios} />
