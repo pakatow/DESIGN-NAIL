@@ -30,7 +30,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
     <section className="bg-secondary">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground whitespace-nowrap">Quem fez, recomenda!</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja o que nossas alunas estão dizendo sobre o curso.
           </p>
