@@ -1,0 +1,116 @@
+export type HeroData = {
+  headline: string;
+  sub_headline: string;
+  preco_atual: number;
+  preco_original: number;
+  url_cta: string;
+  percentual_vagas: number;
+};
+
+export type Modulo = {
+  nome: string;
+  imageId: string;
+};
+
+export type Depoimento = {
+  id: string;
+  texto: string;
+  imageId: string;
+  nome: string;
+};
+
+export type FAQ = {
+  id: string;
+  pergunta: string;
+  resposta: string;
+};
+
+export type RodapeData = {
+  copyright: string;
+  aviso_legal: string;
+  url_termos: string;
+  url_privacidade: string;
+};
+
+export const heroData: HeroData = {
+  headline: "Transforme sua paixão em profissão com o curso de Nail Design",
+  sub_headline: "Nossa oferta especial está disponível por tempo limitado! Aprenda as técnicas mais modernas de alongamento de unhas e se destaque no mercado da beleza.",
+  preco_atual: 14.90,
+  preco_original: 297.00,
+  url_cta: "#",
+  percentual_vagas: 85,
+};
+
+export const beneficios: string[] = [
+  "Material 100% atualizado para 2025/2026",
+  "Acesso vitalício ao curso completo e futuras atualizações",
+  "Certificado de conclusão autêntico e reconhecido",
+  "Suporte exclusivo com a instrutora em grupo VIP",
+  "Aulas práticas e detalhadas, do básico ao avançado",
+  "Bônus exclusivos sobre marketing para manicures",
+];
+
+export const modulos: Modulo[] = [
+  { nome: "Anatomia das Unhas", imageId: "anatomia_unhas" },
+  { nome: "Alongamento em Gel", imageId: "alongamento_gel" },
+  { nome: "Manutenção e Remoção", imageId: "manutencao_unhas" },
+  { nome: "Nail Art e Decoração", imageId: "nail_art_basica" },
+];
+
+export const depoimentos: Depoimento[] = [
+  {
+    id: "whatsapp_1",
+    texto: "Me interessei em ser uma manicure, e comprei o guia! Foi a melhor decisão que tomei. O curso é super completo e a didática da instrutora é incrível. Já estou atendendo minhas primeiras clientes!",
+    imageId: "whatsapp_1",
+    nome: "Juliana S.",
+  },
+  {
+    id: "whatsapp_2",
+    texto: "Eu já era manicure, mas sentia que precisava me atualizar. O curso da NailDesign Pro me abriu os olhos para novas técnicas e tendências. Recomendo de olhos fechados!",
+    imageId: "whatsapp_2",
+    nome: "Carla M.",
+  },
+  {
+    id: "whatsapp_3",
+    texto: "Estava com medo de investir, mas a garantia de 7 dias me deu segurança. Nem precisei usar, o conteúdo é maravilhoso e vale cada centavo. Muito obrigada!",
+    imageId: "whatsapp_3",
+    nome: "Fernanda P.",
+  },
+];
+
+export const faq: FAQ[] = [
+  {
+    id: "pergunta_1",
+    pergunta: "Como eu vou ter acesso às aulas?",
+    resposta: "Seu login e senha serão enviados para o seu e-mail logo após o processamento da sua compra. O acesso à plataforma é imediato.",
+  },
+  {
+    id: "pergunta_2",
+    pergunta: "O certificado é reconhecido?",
+    resposta: "Sim, nosso certificado é amplamente aceito no mercado de trabalho e serve como comprovação de sua capacitação profissional.",
+  },
+  {
+    id: "pergunta_3",
+    pergunta: "Por quanto tempo terei acesso ao curso?",
+    resposta: "O acesso é vitalício! Você pode assistir às aulas quantas vezes quiser, no seu próprio ritmo, e ainda terá acesso a todas as futuras atualizações do curso.",
+  },
+  {
+    id: "pergunta_4",
+    pergunta: "Quais as formas de pagamento?",
+    resposta: "Aceitamos pagamentos via Cartão de Crédito, Boleto Bancário e PIX. O pagamento é 100% seguro.",
+  },
+];
+
+export const rodapeData: RodapeData = {
+  copyright: "Copyright 2025/2026 – NAIL DESIGN. Todos os direitos reservados.",
+  aviso_legal: "PIRATARIA É CRIME. A venda deste curso só pode ser realizada através deste site oficial. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra a lei.",
+  url_termos: "#",
+  url_privacidade: "#",
+};
+
+export const instructorData = {
+    name: "Ana Silva",
+    title: "Nail Designer e Instrutora Mestre",
+    bio: "Com mais de 10 anos de experiência no mercado da beleza, Ana Silva é uma especialista apaixonada por transformar unhas em verdadeiras obras de arte. Já formou mais de 5.000 alunas em todo o Brasil, ajudando-as a construir carreiras de sucesso e a conquistar a independência financeira através da profissão de nail designer.",
+    imageId: "instrutora_principal"
+};

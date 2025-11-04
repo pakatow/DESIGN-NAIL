@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "nail_design_logo",
+      "description": "NailDesign Pro logo",
+      "imageUrl": "https://images.unsplash.com/photo-1647650328670-800bb290cea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuYWlsJTIwbG9nb3xlbnwwfHx8fDE3NjIyMjQyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail logo"
+    },
+    {
+      "id": "instrutora_principal",
+      "description": "A smiling instructor for the nail design course",
+      "imageUrl": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyMTkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "selo_7_dias",
+      "description": "7-day guarantee seal",
+      "imageUrl": "https://images.unsplash.com/photo-1593210504393-9d2706efed41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxndWFyYW50ZWUlMjBzZWFsfGVufDB8fHx8MTc2MjIxNDk2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "guarantee seal"
+    },
+    {
+      "id": "anatomia_unhas",
+      "description": "Illustration for the nail anatomy module",
+      "imageUrl": "https://images.unsplash.com/photo-1707585130689-0d11deccc980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmFpbCUyMGFuYXRvbXl8ZW58MHx8fHwxNzYyMjI0MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail anatomy"
+    },
+    {
+      "id": "alongamento_gel",
+      "description": "Image for the gel extension module",
+      "imageUrl": "https://images.unsplash.com/photo-1690165883280-37543bbf3825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZWwlMjBuYWlsc3xlbnwwfHx8fDE3NjIxNTMyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gel nails"
+    },
+    {
+      "id": "manutencao_unhas",
+      "description": "Image for the nail maintenance module",
+      "imageUrl": "https://images.unsplash.com/photo-1612239395391-dab5de40aa0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuYWlsJTIwY2FyZXxlbnwwfHx8fDE3NjIxMjI1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail care"
+    },
+    {
+      "id": "nail_art_basica",
+      "description": "Image for the basic nail art module",
+      "imageUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuYWlsJTIwYXJ0fGVufDB8fHx8MTc2MjIwNDY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail art"
+    },
+    {
+      "id": "whatsapp_1",
+      "description": "Avatar for the first testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMGF2YXRhcnxlbnwwfHx8fDE3NjIyMTg5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman avatar"
+    },
+    {
+      "id": "whatsapp_2",
+      "description": "Avatar for the second testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyMTkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "whatsapp_3",
+      "description": "Avatar for the third testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1569913486515-b74bf7751574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwYXZhdGFyfGVufDB8fHx8MTc2MjIwMTEwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    }
+  ]
 }
