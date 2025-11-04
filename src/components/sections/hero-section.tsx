@@ -21,7 +21,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline tracking-tight text-foreground font-bold">
                     {data.headline}
                 </h1>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0">
                     {data.sub_headline}
                 </p>
                 
