@@ -18,7 +18,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
             <div className="text-center md:text-left space-y-6">
-                <h1 className="text-4xl md:text-5xl font-headline tracking-tight text-foreground font-bold">
+                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-bold">
                     {data.headline}
                 </h1>
                 
