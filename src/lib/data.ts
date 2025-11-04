@@ -60,7 +60,7 @@ export const dores: DoresData = {
     "Quer ter mais flexibilidade para passar tempo com a família sem abrir mão de uma carreira?",
     "Sonha em ser reconhecida por um talento que você pode transformar em profissão?"
   ],
-  ponte: "Se você respondeu 'sim' a qualquer uma dessas perguntas, continue lendo. A transformação que você busca está mais perto do que imagina."
+  ponte: ""
 };
 
 

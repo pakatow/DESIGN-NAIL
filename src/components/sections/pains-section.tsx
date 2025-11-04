@@ -24,9 +24,6 @@ const PainsSection = ({ data }: { data: DoresData }) => {
           ))}
         </div>
         
-        <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mt-12 font-semibold">
-          {data.ponte}
-        </p>
       </div>
     </section>
   );
