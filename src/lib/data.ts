@@ -81,6 +81,42 @@ export const depoimentos: Depoimento[] = [
     imageId: "depoimento_img_4",
     nome: "Aluna 4",
   },
+  {
+    id: "depoimento_img_5",
+    texto: "",
+    imageId: "depoimento_img_5",
+    nome: "Aluna 5",
+  },
+  {
+    id: "depoimento_img_6",
+    texto: "",
+    imageId: "depoimento_img_6",
+    nome: "Aluna 6",
+  },
+  {
+    id: "depoimento_img_7",
+    texto: "",
+    imageId: "depoimento_img_7",
+    nome: "Aluna 7",
+  },
+  {
+    id: "depoimento_img_8",
+    texto: "",
+    imageId: "depoimento_img_8",
+    nome: "Aluna 8",
+  },
+  {
+    id: "depoimento_img_9",
+    texto: "",
+    imageId: "depoimento_img_9",
+    nome: "Aluna 9",
+  },
+  {
+    id: "depoimento_img_10",
+    texto: "",
+    imageId: "depoimento_img_10",
+    nome: "Aluna 10",
+  },
 ];
 
 export const faq: FAQ[] = [
