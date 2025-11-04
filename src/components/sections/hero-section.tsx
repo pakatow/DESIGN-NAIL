@@ -23,7 +23,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 
                 <div className="flex flex-col items-center justify-center md:hidden">
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4">
-                        {data.sub_headline}
+                        Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
                     </p>
                     {instructorImage && (
                         <div className="relative w-full max-w-sm aspect-[4/5]">
@@ -54,7 +54,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
             </div>
              <div className="hidden md:flex flex-col justify-center items-center">
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4 text-center">
-                    {data.sub_headline}
+                    Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
                 </p>
                 {instructorImage && (
                     <div className="relative w-full max-w-md aspect-[4/5]">
