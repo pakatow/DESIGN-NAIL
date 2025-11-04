@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => {
   return (
@@ -17,17 +18,23 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
         </div>
 
         <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: true,
+            }),
+          ]}
           opts={{
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-4xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {depoimentos.map((depoimento) => {
               const image = PlaceHolderImages.find(p => p.id === depoimento.imageId);
               return (
-                <CarouselItem key={depoimento.id} className="pl-4 md:basis-1/2 lg:basis-1/4">
+                <CarouselItem key={depoimento.id} className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <div className="p-1 h-full">
                     <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow group">
                       {image && (
@@ -38,7 +45,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
                               fill
                               className="object-cover transition-transform duration-500 group-hover:scale-110"
                               data-ai-hint={image.imageHint}
-                              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 25vw"
+                              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                             />
                         </div>
                       )}
