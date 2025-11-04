@@ -51,10 +51,6 @@ const SolutionsSection = () => {
                         </div>
                     </div>
                 </div>
-
-                <p className="mt-12 text-lg text-foreground font-semibold max-w-3xl mx-auto">
-                    Tudo o que você precisa para começar a atender suas primeiras clientes está a um passo de distância.
-                </p>
             </div>
         </section>
     );
