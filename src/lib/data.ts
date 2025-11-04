@@ -1,3 +1,4 @@
+
 export type HeroData = {
   headline: string;
   sub_headline: string;
@@ -58,7 +59,7 @@ export const pacotes: Pacote[] = [
   {
     nome: "Pacote Premium",
     preco: 29.90,
-    preco_original: 497.00,
+    preco_original: 299.90,
     features: [
       "Acesso a todos os módulos do curso",
       "Certificado de Conclusão",
