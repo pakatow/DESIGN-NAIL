@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
 import BenefitsSection from "@/components/sections/benefits-section";
+import PainsSection from "@/components/sections/pains-section";
 import ModulesSection from "@/components/sections/modules-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import FaqSection from "@/components/sections/faq-section";
@@ -8,6 +9,7 @@ import PricingSection from "@/components/sections/pricing-section";
 import {
   heroData,
   beneficios,
+  dores,
   modulos,
   depoimentos,
   faq,
@@ -23,6 +25,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-grow">
         <HeroSection data={heroData} />
+        <PainsSection data={dores} />
         <BenefitsSection benefits={beneficios} />
         <ModulesSection modules={modulos} />
         <PricingSection pacotes={pacotes} />

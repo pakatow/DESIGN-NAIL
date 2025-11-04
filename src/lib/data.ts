@@ -5,6 +5,13 @@ export type HeroData = {
   url_cta: string;
 };
 
+export type DoresData = {
+  headline: string;
+  introducao: string;
+  problemas: string[];
+  ponte: string;
+}
+
 export type Pacote = {
   nome: string;
   preco: number;
@@ -39,10 +46,23 @@ export type RodapeData = {
 };
 
 export const heroData: HeroData = {
-  headline: "Aprenda agora mesmo a fazer os melhores alongamentos de unhas",
+  headline: "APRENDA AGORA MESMO A FAZER OS MELHORES ALONGAMENTOS DE UNHAS",
   sub_headline: "Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$3.187,98",
   url_cta: "#pricing",
 };
+
+export const dores: DoresData = {
+  headline: "Você se identifica com alguma dessas situações?",
+  introducao: "Muitas mulheres sentem que poderiam alcançar mais, mas se veem presas em uma rotina que não traz nem a renda nem a satisfação que merecem.",
+  problemas: [
+    "Sente que o dinheiro no fim do mês nunca é suficiente?",
+    "Busca uma forma de trabalhar para si mesma, mas não sabe por onde começar?",
+    "Quer ter mais flexibilidade para passar tempo com a família sem abrir mão de uma carreira?",
+    "Sonha em ser reconhecida por um talento que você pode transformar em profissão?"
+  ],
+  ponte: "Se você respondeu 'sim' a qualquer uma dessas perguntas, continue lendo. A transformação que você busca está mais perto do que imagina."
+};
+
 
 export const pacotes: Pacote[] = [
   {
