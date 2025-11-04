@@ -17,17 +17,17 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
             <div className="text-center md:text-left space-y-6">
-                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-bold leading-tight">
+                <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground font-bold leading-tight">
                     {data.headline}
                 </h1>
                 
                 <div className="flex flex-col items-center justify-center md:hidden">
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4">
-                        {data.sub_headline}
-                    </p>
                     {instructorImage && (
                         <div className="relative w-full max-w-sm aspect-[4/5]">
                             <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4">
+                                {data.sub_headline}
+                            </p>
                             <Image
                                 src={instructorImage.imageUrl}
                                 alt={instructorImage.description}
