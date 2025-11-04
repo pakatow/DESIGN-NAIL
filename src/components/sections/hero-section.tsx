@@ -24,7 +24,21 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 <p className="text-lg text-muted-foreground">
                     {data.sub_headline}
                 </p>
-                
+                <div className="flex justify-center md:hidden">
+                    {instructorImage && (
+                        <div className="relative w-full max-w-sm aspect-[4/5]">
+                            <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
+                            <Image
+                                src={instructorImage.imageUrl}
+                                alt={instructorImage.description}
+                                fill
+                                className="object-cover rounded-2xl shadow-2xl border-4 border-card"
+                                data-ai-hint={instructorImage.imageHint}
+                                priority
+                            />
+                        </div>
+                    )}
+                </div>
                 <div className="flex flex-col gap-4">
                      <a href="#pricing" className="w-full md:w-auto">
                         <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
@@ -33,7 +47,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                      </a>
                 </div>
             </div>
-             <div className="flex justify-center items-center">
+             <div className="hidden md:flex justify-center items-center">
                 {instructorImage && (
                     <div className="relative w-full max-w-md aspect-[4/5]">
                         <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
