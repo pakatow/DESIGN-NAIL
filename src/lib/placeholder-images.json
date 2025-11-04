@@ -13,12 +13,6 @@
       "imageHint": "woman smiling"
     },
     {
-      "id": "selo_7_dias",
-      "description": "7-day guarantee seal",
-      "imageUrl": "https://images.unsplash.com/photo-1593210504393-9d2706efed41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxndWFyYW50ZWUlMjBzZWFsfGVufDB8fHx8MTc2MjIxNDk2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "guarantee seal"
-    },
-    {
       "id": "anatomia_unhas",
       "description": "Illustration for the nail anatomy module",
       "imageUrl": "https://images.unsplash.com/photo-1707585130689-0d11deccc980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmFpbCUyMGFuYXRvbXl8ZW58MHx8fHwxNzYyMjI0MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -39,7 +33,7 @@
     {
       "id": "nail_art_basica",
       "description": "Image for the basic nail art module",
-      "imageUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuYWlsJTIwYXJ0fGVufDB8fHx8MTc2MjIwNDY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuYWlsJTIwYXJ0fGVufDB8fHx8fDE3NjIyMDQ2NzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "nail art"
     },
     {
@@ -57,7 +51,7 @@
     {
       "id": "whatsapp_3",
       "description": "Avatar for the third testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1569913486515-b74bf7751574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwYXZhdGFyfGVufDB8fHx8MTc2MjIwMTEwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569913486515-b74bf7751574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwYXZhdGFyfGVufDB8fHx8fDE3NjIyMDExMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person avatar"
     }
   ]

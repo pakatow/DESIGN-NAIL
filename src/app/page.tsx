@@ -5,7 +5,6 @@ import BenefitsSection from "@/components/sections/benefits-section";
 import ModulesSection from "@/components/sections/modules-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import FaqSection from "@/components/sections/faq-section";
-import GuaranteeSection from "@/components/sections/guarantee-section";
 import {
   heroData,
   beneficios,
@@ -27,7 +26,6 @@ export default function Home() {
         <BenefitsSection benefits={beneficios} />
         <ModulesSection modules={modulos} />
         <TestimonialsSection depoimentos={depoimentos} />
-        <GuaranteeSection />
         <FaqSection faqs={faq} />
       </main>
       <div className="sticky bottom-0 w-full p-4 bg-background/80 backdrop-blur-sm border-t z-30 md:hidden">
