@@ -1,10 +1,16 @@
 export type HeroData = {
   headline: string;
   sub_headline: string;
-  preco_atual: number;
-  preco_original: number;
   url_cta: string;
-  percentual_vagas: number;
+};
+
+export type Pacote = {
+  nome: string;
+  preco: number;
+  preco_original?: number;
+  features: string[];
+  url_cta: string;
+  isPopular?: boolean;
 };
 
 export type Modulo = {
@@ -34,11 +40,36 @@ export type RodapeData = {
 export const heroData: HeroData = {
   headline: "Transforme sua paixão em profissão com o curso de Nail Design",
   sub_headline: "Nossa oferta especial está disponível por tempo limitado! Aprenda as técnicas mais modernas de alongamento de unhas e se destaque no mercado da beleza.",
-  preco_atual: 14.90,
-  preco_original: 297.00,
-  url_cta: "#",
-  percentual_vagas: 85,
+  url_cta: "#pricing",
 };
+
+export const pacotes: Pacote[] = [
+  {
+    nome: "Pacote Básico",
+    preco: 14.90,
+    preco_original: 297.00,
+    features: [
+      "Acesso a todos os módulos do curso",
+      "Certificado de Conclusão",
+      "Acesso por 1 ano"
+    ],
+    url_cta: "#",
+  },
+  {
+    nome: "Pacote Premium",
+    preco: 29.90,
+    preco_original: 497.00,
+    features: [
+      "Acesso a todos os módulos do curso",
+      "Certificado de Conclusão",
+      "Acesso Vitalício",
+      "Suporte exclusivo com a instrutora",
+      "Bônus de Marketing para Manicures"
+    ],
+    url_cta: "#",
+    isPopular: true
+  }
+];
 
 export const beneficios: string[] = [
   "Material 100% atualizado para 2025/2026",

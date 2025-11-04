@@ -4,6 +4,7 @@ import BenefitsSection from "@/components/sections/benefits-section";
 import ModulesSection from "@/components/sections/modules-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import FaqSection from "@/components/sections/faq-section";
+import PricingSection from "@/components/sections/pricing-section";
 import {
   heroData,
   beneficios,
@@ -11,7 +12,8 @@ import {
   depoimentos,
   faq,
   rodapeData,
-  instructorData
+  instructorData,
+  pacotes,
 } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
@@ -23,6 +25,7 @@ export default function Home() {
         <HeroSection data={heroData} />
         <BenefitsSection benefits={beneficios} />
         <ModulesSection modules={modulos} />
+        <PricingSection pacotes={pacotes} />
         <TestimonialsSection depoimentos={depoimentos} />
         <FaqSection faqs={faq} />
       </main>

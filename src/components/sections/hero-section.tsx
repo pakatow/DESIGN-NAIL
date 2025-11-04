@@ -3,16 +3,12 @@
 import type { HeroData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, ArrowDown } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const HeroSection = ({ data }: { data: HeroData }) => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
-
-  const formatCurrency = (value: number) => {
-    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-  };
 
   return (
     <section className="bg-background relative overflow-hidden pt-8 pb-16 md:pt-12 md:pb-24">
@@ -28,26 +24,13 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 <p className="text-lg text-muted-foreground">
                     {data.sub_headline}
                 </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 bg-card/80 p-4 rounded-lg border">
-                    <div className="text-left">
-                        <p className="text-sm line-through text-muted-foreground">De {formatCurrency(data.preco_original)}</p>
-                        <p className="text-4xl font-bold text-primary">Por apenas {formatCurrency(data.preco_atual)}</p>
-                    </div>
-                </div>
+                
                 <div className="flex flex-col gap-4">
-                     <a href={data.url_cta} className="w-full md:w-auto">
+                     <a href="#pricing" className="w-full md:w-auto">
                         <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                           <ShoppingCart className="mr-2 h-6 w-6" /> GARANTIR MINHA VAGA AGORA
+                           <ArrowDown className="mr-2 h-6 w-6" /> VER PACOTES
                         </Button>
                      </a>
-
-                     <div className="space-y-2">
-                        <p className="text-sm font-medium text-muted-foreground text-center md:text-left">Vagas com desconto se esgotando!</p>
-                        <Progress value={data.percentual_vagas} className="h-3" />
-                        <p className="text-xs text-center md:text-left text-muted-foreground">
-                            {data.percentual_vagas}% das vagas preenchidas
-                        </p>
-                    </div>
                 </div>
             </div>
              <div className="hidden md:flex justify-center items-center">
