@@ -8,9 +8,6 @@ const PainsSection = ({ data }: { data: DoresData }) => {
       <div className="container">
         <div className="text-center space-y-6 mb-12">
           <h2 className="text-3xl md:text-4xl font-headline text-foreground">{data.headline}</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {data.introducao}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">

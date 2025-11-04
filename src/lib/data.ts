@@ -53,7 +53,7 @@ export const heroData: HeroData = {
 
 export const dores: DoresData = {
   headline: "Você se identifica com alguma dessas situações?",
-  introducao: "Muitas mulheres sentem que poderiam alcançar mais, mas se veem presas em uma rotina que não traz nem a renda nem a satisfação que merecem.",
+  introducao: "",
   problemas: [
     "Sente que o dinheiro no fim do mês nunca é suficiente?",
     "Busca uma forma de trabalhar para si mesma, mas não sabe por onde começar?",
