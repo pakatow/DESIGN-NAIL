@@ -8,15 +8,12 @@ import PricingSection from "@/components/sections/pricing-section";
 import {
   heroData,
   dores,
-  modulos,
   depoimentos,
   faq,
   rodapeData,
-  instructorData,
   pacotes,
 } from "@/lib/data";
-import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+import GuaranteeSection from "@/components/sections/guarantee-section";
 
 export default function Home() {
   return (
@@ -27,6 +24,7 @@ export default function Home() {
         <SolutionsSection />
         <PricingSection pacotes={pacotes} />
         <TestimonialsSection depoimentos={depoimentos} />
+        <GuaranteeSection />
         <FaqSection faqs={faq} />
       </main>
       <Footer data={rodapeData} />
