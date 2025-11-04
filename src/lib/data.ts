@@ -40,7 +40,7 @@ export type RodapeData = {
 
 export const heroData: HeroData = {
   headline: "Transforme sua paixão em profissão com o curso de Nail Design",
-  sub_headline: "Nossa oferta especial está disponível por tempo limitado! Aprenda as técnicas mais modernas de alongamento de unhas e se destaque no mercado da beleza.",
+  sub_headline: "",
   url_cta: "#pricing",
 };
 
