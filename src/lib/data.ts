@@ -48,7 +48,7 @@ export const pacotes: Pacote[] = [
   {
     nome: "Pacote Básico",
     preco: 14.90,
-    preco_original: 297.00,
+    preco_original: 149.90,
     features: [
       "Acesso a todos os módulos do curso",
       "Certificado de Conclusão",
