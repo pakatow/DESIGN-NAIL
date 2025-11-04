@@ -27,9 +27,6 @@ const SolutionsSection = () => {
                     <h2 className="text-3xl md:text-4xl font-headline text-foreground">
                         A transformação para sua independência financeira começa aqui
                     </h2>
-                    <p className="text-lg text-primary font-bold max-w-3xl mx-auto">
-                        Com um método passo a passo, testado e aprovado, você vai transformar um pequeno investimento em uma fonte de renda sólida e gratificante.
-                    </p>
                 </div>
 
                 <div className="bg-card p-8 md:p-10 rounded-2xl shadow-lg border">
