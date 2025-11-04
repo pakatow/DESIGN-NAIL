@@ -30,7 +30,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
     <section className="bg-secondary">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline text-foreground font-bold">Quem fez, recomenda!</h2>
+          <h2 className="text-2xl md:text-3xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja o que nossas alunas estão dizendo sobre o curso.
           </p>
@@ -54,21 +54,24 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
             {depoimentos.map((depoimento) => {
               const image = PlaceHolderImages.find(p => p.id === depoimento.imageId);
               return (
-                <CarouselItem key={depoimento.id} className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                <CarouselItem key={depoimento.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
-                    <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow group">
+                    <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent">
                       {image && (
-                         <div className="relative aspect-[9/16] w-full">
+                         <div className="relative aspect-[4/3] w-full">
                             <Image
                               src={image.imageUrl}
                               alt={image.description}
                               fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-110"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
                               data-ai-hint={image.imageHint}
-                              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 100vw"
                             />
                         </div>
                       )}
+                      <CardContent className="p-4 bg-card flex-grow">
+                          <p className="text-muted-foreground text-sm font-medium">{depoimento.nome}</p>
+                      </CardContent>
                     </Card>
                   </div>
                 </CarouselItem>
