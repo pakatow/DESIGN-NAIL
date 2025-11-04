@@ -47,7 +47,7 @@ export type RodapeData = {
 
 export const heroData: HeroData = {
   headline: "APRENDA AGORA MESMO A FAZER OS MELHORES ALONGAMENTOS DE UNHAS",
-  sub_headline: "Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98",
+  sub_headline: "Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$3.187,98",
   url_cta: "#pricing",
 };
 
