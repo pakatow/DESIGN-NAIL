@@ -33,15 +33,15 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                      </a>
                 </div>
             </div>
-             <div className="hidden md:flex justify-center items-center">
+             <div className="flex justify-center items-center">
                 {instructorImage && (
-                    <div className="relative w-[350px] h-[450px] lg:w-[400px] lg:h-[500px]">
-                        <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div className="relative w-full max-w-md aspect-[4/5]">
+                        <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
                         <Image
                             src={instructorImage.imageUrl}
                             alt={instructorImage.description}
                             fill
-                            className="object-cover rounded-t-[50%] rounded-b-lg shadow-2xl border-4 border-card"
+                            className="object-cover rounded-2xl shadow-2xl border-4 border-card"
                             data-ai-hint={instructorImage.imageHint}
                             priority
                         />
