@@ -2,7 +2,6 @@ import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
 import SolutionsSection from "@/components/sections/solutions-section";
 import PainsSection from "@/components/sections/pains-section";
-import ModulesSection from "@/components/sections/modules-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import FaqSection from "@/components/sections/faq-section";
 import PricingSection from "@/components/sections/pricing-section";
@@ -26,7 +25,6 @@ export default function Home() {
         <HeroSection data={heroData} />
         <PainsSection data={dores} />
         <SolutionsSection />
-        <ModulesSection modules={modulos} />
         <PricingSection pacotes={pacotes} />
         <TestimonialsSection depoimentos={depoimentos} />
         <FaqSection faqs={faq} />
