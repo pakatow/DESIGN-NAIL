@@ -24,7 +24,7 @@ const SolutionsSection = () => {
         <section className="bg-secondary">
             <div className="container text-center">
                 <div className="mb-12 space-y-4">
-                    <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    <h2 className="text-xl md:text-2xl font-bold text-foreground">
                         A transformação para sua independência financeira começa aqui
                     </h2>
                 </div>
@@ -44,7 +44,7 @@ const SolutionsSection = () => {
 
                     <div className="mt-8">
                         <h4 className="text-xl font-semibold text-foreground mb-4">E ainda tem mais:</h4>
-                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-muted-foreground">
+                        <div className="flex flex-col sm:flex-row justify-center items-center gap-x-6 gap-y-2 text-muted-foreground">
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Lista de Materiais</span>
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Uso de EPIs</span>
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Manutenção Correta</span>
