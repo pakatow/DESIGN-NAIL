@@ -16,23 +16,18 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
-            <div className="text-center md:text-left space-y-6">
-                <h1 className="text-4xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                    {data.headline}
+            <div className="text-center space-y-6">
+                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
+                    DE <span className="line-through">R$297,00</span> POR APENAS 12x DE R$1,49
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
-                    {data.sub_headline}
+                <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
+                    Tenha acesso vitalício ao método completo que já transformou mais de 5.000 vidas. Vagas com 95% de desconto se encerram hoje.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                     <a href={data.url_cta} className="w-full md:w-auto">
-                        <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                           <ShoppingCart className="mr-2 h-6 w-6" /> GARANTIR MINHA VAGA
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                     <a href={data.url_cta} className="w-full sm:w-auto">
+                        <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse">
+                           <ShoppingCart className="mr-2 h-6 w-6" /> SIM, QUERO MINHA VAGA AGORA
                         </Button>
-                     </a>
-                     <a href="#solutions" className="w-full md:w-auto">
-                         <Button size="lg" variant="outline" className="w-full text-lg h-14 border-2">
-                             <ArrowDown className="mr-2 h-6 w-6" /> Saiba Mais
-                         </Button>
                      </a>
                 </div>
             </div>
