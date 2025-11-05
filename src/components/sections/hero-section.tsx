@@ -9,16 +9,6 @@ import CountdownTimer from "@/components/ui/countdown-timer";
 const HeroSection = () => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
 
-  const beneficios = [
-    "Material 100% atualizado para 2025/2026",
-    "Bônus exclusivos para turbinar seu aprendizado",
-    "Garantia de 7 dias na sua compra",
-    "Acesso vitalício ao curso completo",
-    "Suporte exclusivo e automatizado",
-    "Certificado de conclusão autêntico",
-    "E muito mais.. Aproveite!",
-  ];
-
   return (
     <section className="bg-background relative overflow-hidden pt-12 md:pt-20">
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center font-bold text-sm md:text-base">
@@ -34,15 +24,6 @@ const HeroSection = () => {
                       Do Zero ao Avançado!
                   </p>
               </div>
-              
-              <ul className="space-y-3 text-left inline-block">
-                {beneficios.map((beneficio, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-sm md:text-base text-muted-foreground">{beneficio}</span>
-                  </li>
-                ))}
-              </ul>
               
               <div className="relative w-full max-w-md mx-auto aspect-[4/5] order-last md:order-first">
                 {instructorImage && (
