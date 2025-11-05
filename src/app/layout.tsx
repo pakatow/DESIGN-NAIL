@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: "NailDesign Pro",
   description: "Torne-se uma profissional de design de unhas.",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({

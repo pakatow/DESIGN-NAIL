@@ -11,25 +11,25 @@ const GuaranteeSection = () => {
     };
     
     return (
-        <section className="bg-background">
+        <section className="bg-background py-16 md:py-20">
             <div className="container">
-                <div className="bg-card rounded-lg shadow-lg p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center border border-primary/20">
-                    <div className="space-y-6 text-center md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-headline text-foreground font-bold">Sua Satisfação ou seu Dinheiro de Volta</h2>
-                        <p className="text-lg text-muted-foreground font-body">
+                <div className="bg-card rounded-lg shadow-lg p-6 md:p-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center border border-primary/20">
+                    <div className="space-y-4 text-center md:text-left">
+                        <h2 className="text-2xl md:text-4xl font-headline text-foreground font-bold">Sua Satisfação ou seu Dinheiro de Volta</h2>
+                        <p className="text-base md:text-lg text-muted-foreground font-body">
                             Temos tanta confiança na qualidade do nosso curso que oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não estiver 100% satisfeita, basta nos enviar um único e-mail e devolveremos todo o seu investimento, sem perguntas.
                         </p>
-                        <p className="text-lg text-muted-foreground font-body">
+                        <p className="text-base md:text-lg text-muted-foreground font-body">
                             O risco é todo nosso. Você não tem nada a perder!
                         </p>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center order-first md:order-last">
                         {guaranteeSeal && (
                             <Image 
                                 src={guaranteeSeal.imageUrl}
                                 alt={guaranteeSeal.description}
-                                width={250}
-                                height={250}
+                                width={200}
+                                height={200}
                                 className="transform transition-transform duration-500 hover:rotate-12 hover:scale-110"
                                 data-ai-hint={guaranteeSeal.imageHint}
                             />

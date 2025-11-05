@@ -99,7 +99,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  section {
-    @apply py-12 sm:py-16 md:py-20;
-  }
 }

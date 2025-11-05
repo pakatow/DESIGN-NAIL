@@ -21,30 +21,30 @@ const SolutionsSection = () => {
     ];
 
     return (
-        <section className="bg-secondary">
+        <section className="bg-secondary py-16 md:py-20">
             <div className="container text-center">
-                <div className="mb-12 space-y-4">
+                <div className="mb-10 md:mb-12 space-y-4">
                     <h2 className="text-xl md:text-2xl font-bold text-foreground">
                         A transformação para sua independência financeira começa aqui
                     </h2>
                 </div>
 
-                <div className="bg-card p-8 md:p-10 rounded-2xl shadow-lg border">
+                <div className="bg-card p-6 md:p-10 rounded-2xl shadow-lg border">
                     <h3 className="text-2xl font-bold text-foreground mb-2">Um curso completo, do zero ao profissional</h3>
-                    <p className="text-muted-foreground mb-8">Veja o que você vai dominar:</p>
+                    <p className="text-muted-foreground mb-8 text-base">Veja o que você vai dominar:</p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left">
                         {modules.map((module, index) => (
-                            <div key={index} className="bg-secondary/50 p-6 rounded-lg border border-primary/20">
-                                <h4 className="font-bold text-lg text-primary mb-2">{module.title}</h4>
-                                <p className="text-muted-foreground">{module.description}</p>
+                            <div key={index} className="bg-secondary/50 p-4 md:p-6 rounded-lg border border-primary/20">
+                                <h4 className="font-bold text-base md:text-lg text-primary mb-2">{module.title}</h4>
+                                <p className="text-sm md:text-base text-muted-foreground">{module.description}</p>
                             </div>
                         ))}
                     </div>
 
                     <div className="mt-8">
-                        <h4 className="text-xl font-semibold text-foreground mb-4">E ainda tem mais:</h4>
-                        <div className="flex flex-col sm:flex-row justify-center items-center gap-x-6 gap-y-2 text-muted-foreground">
+                        <h4 className="text-lg md:text-xl font-semibold text-foreground mb-4">E ainda tem mais:</h4>
+                        <div className="flex flex-col sm:flex-row justify-center items-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base text-muted-foreground">
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Lista de Materiais</span>
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Uso de EPIs</span>
                             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Manutenção Correta</span>

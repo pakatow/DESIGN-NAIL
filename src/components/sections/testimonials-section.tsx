@@ -27,11 +27,11 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
 
 
   return (
-    <section className="bg-secondary">
+    <section className="bg-secondary py-16 md:py-20">
       <div className="container">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center space-y-4 mb-10 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja o que nossas alunas estão dizendo sobre o curso.
           </p>
         </div>
@@ -48,13 +48,13 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-sm md:max-w-6xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {depoimentos.map((depoimento) => {
               const image = PlaceHolderImages.find(p => p.id === depoimento.imageId);
               return (
-                <CarouselItem key={depoimento.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={depoimento.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent group">
                       {image && (
@@ -65,7 +65,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
                               fill
                               className="object-cover transition-transform duration-500 group-hover:scale-105"
                               data-ai-hint={image.imageHint}
-                              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 100vw"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                       )}
