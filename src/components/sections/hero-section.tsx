@@ -14,14 +14,14 @@ const HeroSection = () => {
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
       <div className="container relative flex flex-col items-center pb-12">
-          <div className="text-center space-y-6 max-w-3xl">
+          <div className="text-center space-y-6 max-w-4xl w-full">
               <div>
                   <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
                       Treinamento Nail design
                   </h1>
               </div>
               
-              <div className="relative w-full max-w-md md:max-w-xl mx-auto aspect-[4/5]">
+              <div className="relative w-full mx-auto aspect-square md:aspect-[16/9]">
                 {instructorImage && (
                     <>
                         <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
@@ -29,10 +29,10 @@ const HeroSection = () => {
                             src={instructorImage.imageUrl}
                             alt={instructorImage.description}
                             fill
-                            className="object-contain rounded-2xl"
+                            className="object-contain"
                             data-ai-hint={instructorImage.imageHint}
                             priority
-                            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 60vw, 50vw"
+                            sizes="(max-width: 768px) 90vw, 80vw"
                         />
                     </>
                 )}
