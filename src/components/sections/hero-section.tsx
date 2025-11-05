@@ -20,8 +20,7 @@ const HeroSection = () => {
         </div>
         
         {instructorImage && (
-            <div className="relative w-full max-w-2xl mx-auto">
-                <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
+            <div className="relative w-full max-w-md mx-auto">
                 <Image
                     src={instructorImage.imageUrl}
                     alt={instructorImage.description}
@@ -34,7 +33,7 @@ const HeroSection = () => {
             </div>
         )}
           
-        <a href="#pricing" className="w-full max-w-xs md:max-w-sm mt-4">
+        <a href="#pacotes" className="w-full max-w-xs md:max-w-sm mt-4">
             <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
                 ver ofertas disponíveis hoje!
             </Button>

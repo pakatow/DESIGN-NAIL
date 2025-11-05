@@ -10,7 +10,7 @@ const PricingSection = ({ pacotes }: { pacotes: Pacote[] }) => {
   };
 
   return (
-    <section id="pricing" className="bg-secondary py-12 md:py-16">
+    <section id="pacotes" className="bg-secondary py-8 md:py-12">
       <div className="container">
         <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-xl md:text-3xl font-headline text-foreground font-bold">Escolha o plano ideal para você</h2>
