@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
     
 const GuaranteeSection = () => {
-    // There is no 'selo_7_dias' in placeholder-images.json, let's create a placeholder.
     const guaranteeSeal = {
       id: "selo_7_dias",
-      imageUrl: "https://picsum.photos/seed/guarantee/250/250",
+      imageUrl: "https://i.imgur.com/Fx9B6yO.png",
       description: "Selo de Garantia de 7 dias",
       imageHint: "guarantee seal"
     };
