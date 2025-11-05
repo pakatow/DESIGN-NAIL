@@ -21,18 +21,16 @@ const HeroSection = () => {
         
         {instructorImage && (
             <div className="relative w-full max-w-2xl mx-auto">
-                <div className="relative aspect-square md:aspect-[16/9]">
-                    <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
-                    <Image
-                        src={instructorImage.imageUrl}
-                        alt={instructorImage.description}
-                        fill
-                        className="object-contain"
-                        data-ai-hint={instructorImage.imageHint}
-                        priority
-                        sizes="(max-width: 768px) 90vw, 80vw"
-                    />
-                </div>
+                <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
+                <Image
+                    src={instructorImage.imageUrl}
+                    alt={instructorImage.description}
+                    width={600}
+                    height={800}
+                    className="relative object-contain w-full h-auto"
+                    data-ai-hint={instructorImage.imageHint}
+                    priority
+                />
             </div>
         )}
           
