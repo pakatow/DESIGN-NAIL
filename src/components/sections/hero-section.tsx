@@ -10,7 +10,7 @@ const HeroSection = () => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
 
   return (
-    <section className="bg-background relative overflow-hidden pt-12 md:pt-20">
+    <section className="bg-background relative overflow-hidden">
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center font-bold text-sm md:text-base">
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
