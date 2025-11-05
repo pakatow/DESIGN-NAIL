@@ -2,18 +2,24 @@
 
 import type { HeroData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { cn } from "@/lib/utils";
+import CountdownTimer from "@/components/ui/countdown-timer";
+import { TimerIcon } from "lucide-react";
 
 const HeroSection = ({ data }: { data: HeroData }) => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
 
   return (
     <section className="bg-background relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-24">
-        <div className="absolute top-0 left-0 right-0 h-10 bg-accent text-accent-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
-             De R$297 por apenas 12x de R$14,90
+        <div className="absolute top-0 left-0 right-0 h-12 bg-accent text-accent-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
+             <div className="flex items-center gap-2 md:gap-4">
+                <span className="md:text-base">Oferta válida somente hoje!</span>
+                <div className="flex items-center gap-1 font-mono text-base md:text-lg bg-primary/20 p-1 rounded-md">
+                    <TimerIcon className="h-4 w-4 md:h-5 md:w-5" />
+                    <CountdownTimer />
+                </div>
+            </div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative pt-10 flex flex-col items-center">
