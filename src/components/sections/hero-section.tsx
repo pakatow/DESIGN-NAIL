@@ -16,48 +16,29 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
-            <div className="text-center space-y-6">
-                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                    <span className="text-destructive line-through">De R$297</span> por apenas R$14,90
+            <div className="text-center md:text-left space-y-6">
+                <h1 className="text-4xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
+                    {data.headline}
                 </h1>
-                
-                <div className="flex flex-col items-center justify-center md:hidden">
-                    <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-                        Últimas vagas com 95% de desconto para se tornar uma Nail Designer com renda de até R$4.678,98.
-                    </p>
-                    {instructorImage && (
-                        <div className="relative w-full max-w-sm aspect-[4/5]">
-                            <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
-                            <Image
-                                src={instructorImage.imageUrl}
-                                alt={instructorImage.description}
-                                fill
-                                className="object-cover rounded-2xl shadow-2xl border-4 border-card"
-                                data-ai-hint={instructorImage.imageHint}
-                                priority
-                            />
-                        </div>
-                    )}
-                </div>
-
-                <p className="hidden md:block text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
-                    Últimas vagas com 95% de desconto para se tornar uma Nail Designer com renda de até R$4.678,98.
+                <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
+                    {data.sub_headline}
                 </p>
-
-                <div className="flex flex-col gap-4">
-                     <a href="#pricing" className="w-full md:w-auto">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                     <a href={data.url_cta} className="w-full md:w-auto">
                         <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                           <ShoppingCart className="mr-2 h-6 w-6" /> GARANTIR MINHA VAGA AGORA
+                           <ShoppingCart className="mr-2 h-6 w-6" /> GARANTIR MINHA VAGA
                         </Button>
+                     </a>
+                     <a href="#solutions" className="w-full md:w-auto">
+                         <Button size="lg" variant="outline" className="w-full text-lg h-14 border-2">
+                             <ArrowDown className="mr-2 h-6 w-6" /> Saiba Mais
+                         </Button>
                      </a>
                 </div>
             </div>
-             <div className="hidden md:flex flex-col justify-center items-center">
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4 text-center">
-                    Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
-                </p>
+             <div className="hidden md:flex justify-center items-center">
                 {instructorImage && (
-                    <div className="relative w-full max-w-md aspect-[4/5]">
+                    <div className="relative w-full max-w-sm aspect-[4/5]">
                         <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
                         <Image
                             src={instructorImage.imageUrl}
