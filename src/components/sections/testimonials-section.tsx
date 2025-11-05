@@ -58,12 +58,12 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
                   <div className="p-1 h-full">
                     <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent group">
                       {image && (
-                         <div className="relative aspect-[4/3] w-full">
+                         <div className="relative w-full h-[400px] md:h-[500px]">
                             <Image
                               src={image.imageUrl}
                               alt={image.description}
                               fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              className="object-contain transition-transform duration-500 group-hover:scale-105"
                               data-ai-hint={image.imageHint}
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
