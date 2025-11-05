@@ -18,10 +18,11 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative pt-10 flex flex-col items-center">
             <div className="text-center space-y-4 md:space-y-6">
-                <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                    Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
+                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight max-w-xl">
+                    <span className="block">DOMINE OS MELHORES</span>
+                    <span className="block">ALONGAMENTOS DE UNHAS</span>
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground max-w-md md:max-w-xl mx-auto">
+                <p className="text-base md:text-lg text-muted-foreground max-w-sm md:max-w-md mx-auto">
                     ... com as técnicas de alongamento de unhas mais desejadas do momento.
                 </p>
             </div>
@@ -42,7 +43,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
             </div>
             <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-md">
                  <a href="#pricing" className="w-full">
-                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-bg">
+                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse">
                        QUERO GARANTIR MEU ACESSO AGORA!
                     </Button>
                  </a>

@@ -107,8 +107,8 @@ export default {
           }
         },
         'pulse-bg': {
-          '0%, 100%': { backgroundColor: 'hsl(var(--primary))' },
-          '50%': { backgroundColor: 'hsl(329 80% 65%)' },
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.5' },
         }
       },
       animation: {
