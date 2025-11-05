@@ -38,7 +38,7 @@ const HeroSection = () => {
                 )}
               </div>
 
-              <div className="flex flex-col items-center md:items-center gap-4 pt-6">
+              <div className="flex flex-col items-center md:items-center gap-4">
                   <a href="#pricing" className="w-full max-w-xs md:max-w-sm">
                       <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
                          ver ofertas disponíveis hoje!
