@@ -16,14 +16,14 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
-            <div className="text-center md:text-left space-y-6">
-                <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground font-bold leading-tight">
-                    Curso Completo de Nail Designer: De R$297 por Apenas R$14,90 (Só Hoje!)
+            <div className="text-center space-y-6">
+                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
+                    <span className="text-destructive line-through">De R$297</span> por apenas R$14,90
                 </h1>
                 
                 <div className="flex flex-col items-center justify-center md:hidden">
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4">
-                        Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.
+                    <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
+                        Últimas vagas com 95% de desconto para se tornar uma Nail Designer com renda de até R$4.678,98.
                     </p>
                     {instructorImage && (
                         <div className="relative w-full max-w-sm aspect-[4/5]">
@@ -40,8 +40,8 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                     )}
                 </div>
 
-                <p className="hidden md:block text-lg text-muted-foreground max-w-xl">
-                    Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.
+                <p className="hidden md:block text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
+                    Últimas vagas com 95% de desconto para se tornar uma Nail Designer com renda de até R$4.678,98.
                 </p>
 
                 <div className="flex flex-col gap-4">
