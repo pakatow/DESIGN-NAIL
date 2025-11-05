@@ -2,7 +2,7 @@
 import type { Depoimento } from "@/lib/data";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
@@ -27,7 +27,7 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
 
 
   return (
-    <section className="bg-secondary py-12 md:py-16">
+    <section className="bg-secondary py-8 md:py-12">
       <div className="container">
         <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
@@ -69,9 +69,6 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
                             />
                         </div>
                       )}
-                      <CardContent className="p-4 bg-card flex-grow">
-                          <p className="text-muted-foreground text-sm font-medium">{depoimento.nome}</p>
-                      </CardContent>
                     </Card>
                   </div>
                 </CarouselItem>
