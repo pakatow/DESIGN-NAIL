@@ -6,7 +6,6 @@ import TestimonialsSection from "@/components/sections/testimonials-section";
 import FaqSection from "@/components/sections/faq-section";
 import PricingSection from "@/components/sections/pricing-section";
 import {
-  heroData,
   dores,
   depoimentos,
   faq,
@@ -19,7 +18,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-grow">
-        <HeroSection data={heroData} />
+        <HeroSection />
         <PainsSection data={dores} />
         <SolutionsSection />
         <PricingSection pacotes={pacotes} />

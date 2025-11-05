@@ -45,12 +45,6 @@ export type RodapeData = {
   url_privacidade: string;
 };
 
-export const heroData: HeroData = {
-  headline: "Curso Completo de Nail Designer: De R$297 por Apenas R$14,90 (Só Hoje!)",
-  sub_headline: "Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.",
-  url_cta: "#pricing",
-};
-
 export const dores: DoresData = {
   headline: "Você se identifica com alguma dessas situações?",
   introducao: "",
@@ -90,15 +84,6 @@ export const pacotes: Pacote[] = [
     url_cta: "#",
     isPopular: true
   }
-];
-
-export const beneficios: string[] = [
-  "Material 100% atualizado para 2025/2026",
-  "Acesso vitalício ao curso completo e futuras atualizações",
-  "Certificado de conclusão autêntico e reconhecido",
-  "Suporte exclusivo com a instrutora em grupo VIP",
-  "Aulas práticas e detalhadas, do básico ao avançado",
-  "Bônus exclusivos sobre marketing para manicures",
 ];
 
 export const modulos: Modulo[] = [

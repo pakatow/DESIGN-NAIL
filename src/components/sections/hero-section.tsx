@@ -1,58 +1,71 @@
 'use client';
 
-import type { HeroData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import CountdownTimer from "@/components/ui/countdown-timer";
-import { TimerIcon } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
-const HeroSection = ({ data }: { data: HeroData }) => {
+const HeroSection = () => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
 
+  const beneficios = [
+    "Material 100% atualizado para 2025/2026",
+    "Bônus exclusivos para turbinar seu aprendizado",
+    "Garantia de 7 dias na sua compra",
+    "Acesso vitalício ao curso completo",
+    "Suporte exclusivo e automatizado",
+    "Certificado de conclusão autêntico",
+    "E muito mais.. Aproveite!",
+  ];
+
   return (
-    <section className="bg-background relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-24">
-        <div className="absolute top-0 left-0 right-0 h-12 bg-primary text-primary-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
-             <div className="flex items-center gap-2 md:gap-4">
-                <span className="md:text-base">Oferta válida somente hoje!</span>
-                <div className="flex items-center gap-1 font-mono text-base md:text-lg bg-primary/20 p-1 rounded-md">
-                    <TimerIcon className="h-4 w-4 md:h-5 md:w-5" />
-                    <CountdownTimer />
-                </div>
-            </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
-        <div className="container relative pt-10 flex flex-col items-center">
-            <div className="text-center space-y-4 md:space-y-6">
-                <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight max-w-xl">
-                    <span className="block">DOMINE OS MELHORES</span>
-                    <span className="block">ALONGAMENTOS DE UNHAS</span>
-                </h1>
-                <p className="text-sm md:text-lg text-muted-foreground max-w-xs md:max-w-md mx-auto">
-                    ... com as técnicas de alongamento de unhas mais desejadas do momento.
-                </p>
-            </div>
-             <div className="mt-6 md:mt-8 flex justify-center items-center w-full">
+    <section className="bg-background relative overflow-hidden py-12 md:py-20">
+        <div className="container relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative w-full max-w-md mx-auto aspect-[4/5] order-last md:order-first">
                 {instructorImage && (
-                    <div className="relative w-full max-w-[280px] md:max-w-sm aspect-[4/5]">
+                    <>
                         <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
                         <Image
                             src={instructorImage.imageUrl}
                             alt={instructorImage.description}
                             fill
-                            className="object-cover rounded-2xl shadow-2xl border-4 border-card"
+                            className="object-contain rounded-2xl"
                             data-ai-hint={instructorImage.imageHint}
                             priority
                         />
-                    </div>
+                    </>
                 )}
             </div>
-            <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-md">
-                 <a href="#pricing" className="w-full">
-                    <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
-                       QUERO GARANTIR MEU ACESSO AGORA!
-                    </Button>
-                 </a>
+
+            <div className="text-center md:text-left space-y-6">
+                <div>
+                    <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
+                        Treinamento Nail design
+                    </h1>
+                    <p className="text-2xl md:text-3xl font-headline text-primary font-bold">
+                        Do Zero ao Avançado!
+                    </p>
+                </div>
+                
+                <ul className="space-y-3 text-left inline-block">
+                  {beneficios.map((beneficio, index) => (
+                    <li key={index} className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary" />
+                      <span className="text-sm md:text-base text-muted-foreground">{beneficio}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-col items-center md:items-start gap-4">
+                    <a href="#pricing" className="w-full max-w-xs md:max-w-sm">
+                        <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
+                           QUERO GARANTIR O MEU CURSO AGORA
+                        </Button>
+                    </a>
+                    <div className="bg-primary text-primary-foreground font-bold text-xl md:text-2xl py-2 px-6 rounded-lg">
+                        R$14,90
+                    </div>
+                </div>
             </div>
         </div>
     </section>
