@@ -13,15 +13,7 @@ const HeroSection = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center font-bold text-sm md:text-base">
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
-      <div className="container relative flex flex-col items-center pb-12">
-          <div className="text-center w-full max-w-4xl space-y-6">
-              <div>
-                  <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                      Treinamento Nail design
-                  </h1>
-              </div>
-          </div>
-
+      <div className="container relative flex flex-col items-center pb-12 pt-6 space-y-6">
           <div className="relative w-full max-w-4xl mx-auto aspect-square md:aspect-[16/9]">
             {instructorImage && (
                 <>
