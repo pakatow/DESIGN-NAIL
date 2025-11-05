@@ -56,20 +56,13 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
               return (
                 <CarouselItem key={depoimento.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
-                    <Card className="overflow-hidden h-full flex flex-col shadow-sm hover:shadow-primary/20 transition-all duration-300 border-transparent group">
-                      {image && (
-                         <div className="relative w-full h-[400px] md:h-[500px]">
-                            <Image
-                              src={image.imageUrl}
-                              alt={image.description}
-                              fill
-                              className="object-contain transition-transform duration-500 group-hover:scale-105"
-                              data-ai-hint={image.imageHint}
-                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            />
-                        </div>
-                      )}
-                    </Card>
+                    {image && (
+                      <Card
+                        className="h-[400px] md:h-[500px] w-full bg-card bg-no-repeat bg-center bg-contain transition-transform duration-500 hover:scale-105"
+                        style={{ backgroundImage: `url(${image.imageUrl})` }}
+                        aria-label={image.description}
+                      />
+                    )}
                   </div>
                 </CarouselItem>
               );
