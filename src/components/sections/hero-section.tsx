@@ -18,7 +18,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="container relative pt-10 flex flex-col items-center">
             <div className="text-center space-y-6">
                 <h1 className="text-3xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                    DOMINE OS MELHORES ALONGAMENTOS DE UNHAS
+                    DOMINE OS MELHORES<br />ALONGAMENTOS DE UNHAS
                 </h1>
                 <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
                     Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
