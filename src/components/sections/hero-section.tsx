@@ -12,7 +12,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
 
   return (
     <section className="bg-background relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-24">
-        <div className="absolute top-0 left-0 right-0 h-12 bg-accent text-accent-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
+        <div className="absolute top-0 left-0 right-0 h-12 bg-primary text-primary-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
              <div className="flex items-center gap-2 md:gap-4">
                 <span className="md:text-base">Oferta válida somente hoje!</span>
                 <div className="flex items-center gap-1 font-mono text-base md:text-lg bg-primary/20 p-1 rounded-md">
