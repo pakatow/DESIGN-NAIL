@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   :root {
     --background: 330 56% 95%; /* Pale Rose #F8E8EF */
     --foreground: 330 10% 20%;
