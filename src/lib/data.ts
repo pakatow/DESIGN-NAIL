@@ -129,31 +129,7 @@ export const depoimentos: Depoimento[] = [
     texto: "",
     imageId: "depoimento_img_6",
     nome: "Unhas por @fernanda_nail_designer",
-  },
-  {
-    id: "depoimento_img_7",
-    texto: "",
-    imageId: "depoimento_img_7",
-    nome: "Unhas por @unhas_de_rainha_oficial",
-  },
-  {
-    id: "depoimento_img_8",
-    texto: "",
-    imageId: "depoimento_img_8",
-    nome: "Unhas por @glamour_nails_sp",
-  },
-  {
-    id: "depoimento_img_9",
-    texto: "",
-    imageId: "depoimento_img_9",
-    nome: "Unhas por @carla_manicure",
-  },
-  {
-    id: "depoimento_img_10",
-    texto: "",
-    imageId: "depoimento_img_10",
-    nome: "Unhas por @espaco_unhas_perfeitas",
-  },
+  }
 ];
 
 export const faq: FAQ[] = [
