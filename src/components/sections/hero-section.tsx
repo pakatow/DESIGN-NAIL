@@ -20,9 +20,6 @@ const HeroSection = () => {
                   <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
                       Treinamento Nail design
                   </h1>
-                  <p className="text-2xl md:text-3xl font-headline text-primary font-bold">
-                      Do Zero ao Avançado!
-                  </p>
               </div>
               
               <div className="relative w-full max-w-md mx-auto aspect-[4/5] order-last md:order-first">
