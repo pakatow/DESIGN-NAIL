@@ -27,9 +27,9 @@ const TestimonialsSection = ({ depoimentos }: { depoimentos: Depoimento[] }) => 
 
 
   return (
-    <section className="bg-secondary py-16 md:py-20">
+    <section className="bg-secondary py-12 md:py-16">
       <div className="container">
-        <div className="text-center space-y-4 mb-10 md:mb-12">
+        <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-bold font-headline text-foreground">Quem fez, recomenda!</h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Veja o que nossas alunas estão dizendo sobre o curso.

@@ -5,13 +5,13 @@ import { XCircle } from "lucide-react";
 
 const PainsSection = ({ data }: { data: DoresData }) => {
   return (
-    <section className="bg-background py-16 md:py-20">
+    <section className="bg-background py-12 md:py-16">
       <div className="container">
-        <div className="text-center space-y-4 mb-10 md:mb-12">
+        <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-3xl font-headline text-foreground font-bold px-4">{data.headline}</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {data.problemas.map((problema, index) => (
             <Card 
               key={index} 

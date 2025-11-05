@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 
 const FaqSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
-    <section className="bg-secondary py-16 md:py-20">
+    <section className="bg-secondary py-12 md:py-16">
       <div className="container max-w-3xl mx-auto">
-        <div className="text-center space-y-4 mb-10 md:mb-12">
+        <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-headline text-foreground font-bold">Perguntas Frequentes</h2>
           <p className="text-base md:text-lg text-muted-foreground">
             Ainda tem dúvidas? Encontre as respostas aqui.

@@ -11,7 +11,7 @@ const GuaranteeSection = () => {
     };
     
     return (
-        <section className="bg-background py-16 md:py-20">
+        <section className="bg-background py-12 md:py-16">
             <div className="container">
                 <div className="bg-card rounded-lg shadow-lg p-6 md:p-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center border border-primary/20">
                     <div className="space-y-4 text-center md:text-left">

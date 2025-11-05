@@ -21,9 +21,9 @@ const SolutionsSection = () => {
     ];
 
     return (
-        <section className="bg-secondary py-16 md:py-20">
+        <section className="bg-secondary py-12 md:py-16">
             <div className="container text-center">
-                <div className="mb-10 md:mb-12 space-y-4">
+                <div className="mb-8 md:mb-10 space-y-4">
                     <h2 className="text-xl md:text-2xl font-bold text-foreground">
                         A transformação para sua independência financeira começa aqui
                     </h2>
