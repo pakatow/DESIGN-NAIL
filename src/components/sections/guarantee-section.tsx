@@ -17,9 +17,6 @@ const GuaranteeSection = () => {
                         <p className="text-base md:text-lg text-muted-foreground font-body">
                             Temos tanta confiança na qualidade do nosso curso que oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não estiver 100% satisfeita, basta nos enviar um único e-mail e devolveremos todo o seu investimento, sem perguntas.
                         </p>
-                        <p className="text-base md:text-lg text-muted-foreground font-body">
-                            O risco é todo nosso. Você não tem nada a perder!
-                        </p>
                     </div>
                     <div className="flex justify-center order-first md:order-last">
                         {guaranteeSeal && (
