@@ -14,37 +14,36 @@ const HeroSection = () => {
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
       <div className="container relative flex flex-col items-center pb-12">
-          <div className="text-center space-y-6 max-w-4xl w-full">
+          <div className="text-center w-full max-w-4xl space-y-6">
               <div>
                   <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
                       Treinamento Nail design
                   </h1>
               </div>
-              
-              <div className="relative w-full mx-auto aspect-square md:aspect-[16/9]">
-                {instructorImage && (
-                    <>
-                        <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
-                        <Image
-                            src={instructorImage.imageUrl}
-                            alt={instructorImage.description}
-                            fill
-                            className="object-contain"
-                            data-ai-hint={instructorImage.imageHint}
-                            priority
-                            sizes="(max-width: 768px) 90vw, 80vw"
-                        />
-                    </>
-                )}
-              </div>
           </div>
-          <div className="w-full flex justify-center mt-4">
-              <a href="#pricing" className="w-full max-w-xs md:max-w-sm">
-                  <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
-                     ver ofertas disponíveis hoje!
-                  </Button>
-              </a>
+
+          <div className="relative w-full max-w-4xl mx-auto aspect-square md:aspect-[16/9]">
+            {instructorImage && (
+                <>
+                    <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
+                    <Image
+                        src={instructorImage.imageUrl}
+                        alt={instructorImage.description}
+                        fill
+                        className="object-contain"
+                        data-ai-hint={instructorImage.imageHint}
+                        priority
+                        sizes="(max-width: 768px) 90vw, 80vw"
+                    />
+                </>
+            )}
           </div>
+          
+          <a href="#pricing" className="w-full max-w-xs md:max-w-sm">
+              <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
+                 ver ofertas disponíveis hoje!
+              </Button>
+          </a>
       </div>
     </section>
   );
