@@ -10,9 +10,12 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
-        "2xl": "1400px",
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
       },
     },
     extend: {
@@ -102,12 +105,17 @@ export default {
           "to": {
             "backgroundPosition": "--200% 0"
           }
+        },
+        'pulse-bg': {
+          '0%, 100%': { backgroundColor: 'hsl(var(--primary))' },
+          '50%': { backgroundColor: 'hsl(329 80% 65%)' },
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        "shine": "shine 6s linear infinite"
+        "shine": "shine 6s linear infinite",
+        'pulse-bg': 'pulse-bg 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },

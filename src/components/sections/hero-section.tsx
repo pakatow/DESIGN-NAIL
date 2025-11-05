@@ -5,23 +5,24 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { cn } from "@/lib/utils";
 
 const HeroSection = ({ data }: { data: HeroData }) => {
   const instructorImage = PlaceHolderImages.find(p => p.id === 'instrutora_principal');
 
   return (
-    <section className="bg-background relative overflow-hidden pt-12 pb-16 md:pt-16 md:pb-24">
+    <section className="bg-background relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-24">
         <div className="absolute top-0 left-0 right-0 h-10 bg-accent text-accent-foreground flex items-center justify-center text-center font-bold text-xs md:text-sm z-10 px-4">
-            Oferta Válida Somente Hoje!
+             De R$297 por apenas 12x de R$14,90
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background mt-10"></div>
         <div className="container relative pt-10 flex flex-col items-center">
             <div className="text-center space-y-4 md:space-y-6">
-                <h1 className="text-2xl md:text-4xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
-                    DOMINE OS MELHORES<br />ALONGAMENTOS DE UNHAS
-                </h1>
-                <p className="text-sm md:text-lg text-muted-foreground max-w-md md:max-w-xl mx-auto">
+                <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
                     Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
+                </h1>
+                <p className="text-base md:text-lg text-muted-foreground max-w-md md:max-w-xl mx-auto">
+                    ... com as técnicas de alongamento de unhas mais desejadas do momento.
                 </p>
             </div>
              <div className="mt-6 md:mt-8 flex justify-center items-center w-full">
@@ -39,10 +40,10 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                     </div>
                 )}
             </div>
-            <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-sm">
+            <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-md">
                  <a href="#pricing" className="w-full">
-                    <Button size="lg" className="w-full text-base md:text-lg h-12 md:h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                       <ArrowDown className="mr-2 h-5 w-5 md:h-6 md:w-6" /> VER PACOTES
+                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-bg">
+                       QUERO GARANTIR MEU ACESSO AGORA!
                     </Button>
                  </a>
             </div>

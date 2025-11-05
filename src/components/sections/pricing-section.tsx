@@ -55,9 +55,9 @@ const PricingSection = ({ pacotes }: { pacotes: Pacote[] }) => {
                 <a href={pacote.url_cta} className="w-full">
                   <Button size="lg" className={cn(
                     "w-full text-base md:text-lg h-12 font-bold",
-                    pacote.isPopular ? "bg-primary hover:bg-primary/90" : "bg-green-500 hover:bg-green-600 text-white"
+                     pacote.isPopular && "animate-pulse-bg"
                   )}>
-                    QUERO ESSE
+                    QUERO GARANTIR MEU ACESSO AGORA!
                   </Button>
                 </a>
               </CardFooter>
