@@ -8,8 +8,8 @@
     },
     {
       "id": "instrutora_principal",
-      "description": "A smiling instructor for the nail design course",
-      "imageUrl": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyMTkwMjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Instrutora do curso de design de unhas, sorrindo",
+      "imageUrl": "https://i.imgur.com/gY8P0bB.png",
       "imageHint": "woman smiling"
     },
     {
@@ -69,8 +69,8 @@
     {
       "id": "depoimento_img_6",
       "description": "Social proof image of a student's work",
-      "imageUrl": "https://images.unsplash.com/photo-1712331676372-2fc48f449c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2NpYWwlMjBwcm9vZnxlbnwwfHx8fDE3NjIxMDI2MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "social proof"
+      "imageUrl": "https://images.unsplash.com/photo-1712331676372-2fc48f449c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuYWlsJTIwYXJ0fGVufDB8fHx8fDE3NjIxMDI2MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nail art"
     },
     {
       "id": "depoimento_img_7",
