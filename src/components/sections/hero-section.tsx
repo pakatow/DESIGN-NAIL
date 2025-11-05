@@ -66,9 +66,6 @@ const HeroSection = () => {
                          QUERO GARANTIR O MEU CURSO AGORA
                       </Button>
                   </a>
-                  <div className="bg-primary text-primary-foreground font-bold text-xl md:text-2xl py-2 px-6 rounded-lg">
-                      R$14,90
-                  </div>
               </div>
           </div>
       </div>
