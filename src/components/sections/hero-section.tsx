@@ -43,7 +43,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
             </div>
             <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-md">
                  <a href="#pricing" className="w-full">
-                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-bg">
+                    <Button size="lg" className="w-full text-base md:text-lg h-12 font-bold animate-pulse-bg">
                        QUERO GARANTIR MEU ACESSO AGORA!
                     </Button>
                  </a>
