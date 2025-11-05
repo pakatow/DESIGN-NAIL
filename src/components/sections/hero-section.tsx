@@ -13,8 +13,12 @@ const HeroSection = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center font-bold text-sm md:text-base">
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
-      <div className="container relative flex flex-col items-center pb-8 pt-6 space-y-6">
-          <div className="relative w-full max-w-4xl mx-auto aspect-square md:aspect-[16/9]">
+      <div className="container relative flex flex-col items-center py-6 space-y-4">
+        <div className="text-center space-y-2">
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">Não perca tempo!</h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de 4.673,90!</p>
+        </div>
+          <div className="relative w-full max-w-7xl mx-auto aspect-square md:aspect-[16/9]">
             {instructorImage && (
                 <>
                     <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
