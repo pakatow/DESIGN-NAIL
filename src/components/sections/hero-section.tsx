@@ -22,7 +22,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                     <span className="block">DOMINE OS MELHORES</span>
                     <span className="block">ALONGAMENTOS DE UNHAS</span>
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground max-w-sm md:max-w-md mx-auto">
+                <p className="text-sm md:text-lg text-muted-foreground max-w-xs md:max-w-md mx-auto">
                     ... com as técnicas de alongamento de unhas mais desejadas do momento.
                 </p>
             </div>
@@ -43,7 +43,7 @@ const HeroSection = ({ data }: { data: HeroData }) => {
             </div>
             <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs md:max-w-md">
                  <a href="#pricing" className="w-full">
-                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse">
+                    <Button size="lg" className="w-full text-base md:text-lg h-14 md:h-16 font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-bg">
                        QUERO GARANTIR MEU ACESSO AGORA!
                     </Button>
                  </a>

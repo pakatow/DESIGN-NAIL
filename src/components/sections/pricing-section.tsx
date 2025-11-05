@@ -13,7 +13,7 @@ const PricingSection = ({ pacotes }: { pacotes: Pacote[] }) => {
     <section id="pricing" className="bg-secondary py-16 md:py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-headline text-foreground font-bold">Escolha o plano ideal para você</h2>
+          <h2 className="text-xl md:text-3xl font-headline text-foreground font-bold">Escolha o plano ideal para você</h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Invista na sua carreira com o pacote que melhor se adapta às suas necessidades.
           </p>
@@ -54,8 +54,7 @@ const PricingSection = ({ pacotes }: { pacotes: Pacote[] }) => {
               <CardFooter className="px-4 pb-6">
                 <a href={pacote.url_cta} className="w-full">
                   <Button size="lg" className={cn(
-                    "w-full text-base md:text-lg h-12 font-bold",
-                     pacote.isPopular && "animate-pulse-bg"
+                    "w-full text-base md:text-lg h-12 font-bold animate-pulse-bg"
                   )}>
                     QUERO GARANTIR MEU ACESSO AGORA!
                   </Button>
