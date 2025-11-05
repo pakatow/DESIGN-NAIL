@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center font-bold text-sm md:text-base">
         <span>Oferta válida somente hoje! <CountdownTimer /></span>
       </div>
-      <div className="container relative flex flex-col items-center pt-12 pb-12">
+      <div className="container relative flex flex-col items-center pb-12">
           <div className="text-center space-y-6 max-w-3xl">
               <div>
                   <h1 className="text-3xl md:text-5xl font-headline tracking-tight text-foreground font-extrabold leading-tight">
@@ -21,7 +21,7 @@ const HeroSection = () => {
                   </h1>
               </div>
               
-              <div className="relative w-full max-w-sm md:max-w-lg mx-auto aspect-[4/5]">
+              <div className="relative w-full max-w-md md:max-w-xl mx-auto aspect-[4/5]">
                 {instructorImage && (
                     <>
                         <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
@@ -32,7 +32,7 @@ const HeroSection = () => {
                             className="object-contain rounded-2xl"
                             data-ai-hint={instructorImage.imageHint}
                             priority
-                            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 40vw"
+                            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 60vw, 50vw"
                         />
                     </>
                 )}
