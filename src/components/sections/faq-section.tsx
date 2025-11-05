@@ -1,5 +1,5 @@
 import type { FAQ } from "@/lib/data";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const FaqSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
@@ -11,18 +11,22 @@ const FaqSection = ({ faqs }: { faqs: FAQ[] }) => {
             Ainda tem dúvidas? Encontre as respostas aqui.
           </p>
         </div>
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <div className="space-y-4">
           {faqs.map((faq) => (
-            <AccordionItem value={faq.id} key={faq.id} className="bg-card px-6 rounded-lg shadow-sm border">
-              <AccordionTrigger className="text-left font-bold text-lg hover:no-underline text-foreground">
-                {faq.pergunta}
-              </AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground pt-2">
-                {faq.resposta}
-              </AccordionContent>
-            </AccordionItem>
+            <Card key={faq.id} className="bg-card shadow-sm border">
+                <CardHeader>
+                    <CardTitle className="text-left font-bold text-lg text-foreground">
+                    {faq.pergunta}
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-base text-muted-foreground">
+                    {faq.resposta}
+                    </p>
+                </CardContent>
+            </Card>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );
