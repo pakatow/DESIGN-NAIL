@@ -46,8 +46,8 @@ export type RodapeData = {
 };
 
 export const heroData: HeroData = {
-  headline: "APRENDA AGORA MESMO A FAZER OS MELHORES ALONGAMENTOS DE UNHAS",
-  sub_headline: "Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98",
+  headline: "Curso Completo de Nail Designer: De R$297 por Apenas R$14,90 (Só Hoje!)",
+  sub_headline: "Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.",
   url_cta: "#pricing",
 };
 
@@ -68,7 +68,7 @@ export const pacotes: Pacote[] = [
   {
     nome: "Pacote Básico",
     preco: 14.90,
-    preco_original: 149.90,
+    preco_original: 297.00,
     features: [
       "Acesso a todos os módulos do curso",
       "Certificado de Conclusão",
@@ -79,7 +79,7 @@ export const pacotes: Pacote[] = [
   {
     nome: "Pacote Premium",
     preco: 29.90,
-    preco_original: 299.90,
+    preco_original: 497.00,
     features: [
       "Acesso a todos os módulos do curso",
       "Certificado de Conclusão",

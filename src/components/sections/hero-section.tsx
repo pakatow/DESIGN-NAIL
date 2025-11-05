@@ -2,7 +2,7 @@
 
 import type { HeroData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -18,12 +18,12 @@ const HeroSection = ({ data }: { data: HeroData }) => {
         <div className="container relative grid md:grid-cols-2 gap-12 items-center pt-10">
             <div className="text-center md:text-left space-y-6">
                 <h1 className="text-2xl md:text-3xl font-headline tracking-tight text-foreground font-bold leading-tight">
-                    {data.headline}
+                    Curso Completo de Nail Designer: De R$297 por Apenas R$14,90 (Só Hoje!)
                 </h1>
                 
                 <div className="flex flex-col items-center justify-center md:hidden">
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-4">
-                        Descubra como uma simples dona de casa de 48 anos transformou R$14,90 em um salário de R$4.678,98
+                        Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.
                     </p>
                     {instructorImage && (
                         <div className="relative w-full max-w-sm aspect-[4/5]">
@@ -41,13 +41,13 @@ const HeroSection = ({ data }: { data: HeroData }) => {
                 </div>
 
                 <p className="hidden md:block text-lg text-muted-foreground max-w-xl">
-                    Junte-se a milhares de mulheres que estão transformando suas vidas financeiras através do design de unhas.
+                    Acesso vitalício a todas as aulas que podem gerar uma renda de até R$4.678,98 por mês. Últimas vagas com 95% de desconto.
                 </p>
 
                 <div className="flex flex-col gap-4">
                      <a href="#pricing" className="w-full md:w-auto">
                         <Button size="lg" className="w-full text-lg h-14 font-bold bg-green-500 hover:bg-green-600 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                           <ArrowDown className="mr-2 h-6 w-6" /> VER PACOTES
+                           <ShoppingCart className="mr-2 h-6 w-6" /> GARANTIR MINHA VAGA AGORA
                         </Button>
                      </a>
                 </div>
