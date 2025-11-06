@@ -8,9 +8,6 @@ const FaqSection = ({ faqs }: { faqs: FAQ[] }) => {
       <div className="container max-w-3xl mx-auto">
         <div className="text-center space-y-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-headline text-foreground font-bold">Perguntas Frequentes</h2>
-          <p className="text-base md:text-lg text-muted-foreground">
-            Ainda tem dúvidas? Encontre as respostas aqui.
-          </p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (
